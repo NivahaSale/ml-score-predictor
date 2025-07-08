@@ -50,46 +50,42 @@ I wanted to learn:
 - And mostly, to build something fun and functional while learning
 
 ---
+Sample Data Used
+Hours  = [2.5, 5.1, 3.2, 8.5, 3.5, 1.5, 9.2]  
+Scores = [21,   47,   27,   75,   30,   20,  88]
 
-## Dataset Used
+## 🚀 How to Run Locally
 
-A tiny dataset (just 7 samples) of study hours and their corresponding scores:
+###  Set up and run the project
 
-```python
-Hours:  [2.5, 5.1, 3.2, 8.5, 3.5, 1.5, 9.2]
-Scores: [21, 47, 27, 75, 30, 20, 88]
-
-
-## How to Run Locally
-
-### 1. Clone the Repository
-
-git clone https://github.com/your-username/ml-score-predictor.git
+```bash
+# Clone the repository
+git clone https://github.com/NivahaSale/ml-score-predictor.git
 cd ml-score-predictor
 
-### 2.Create a Virtual Environment
-
+# Create and activate a virtual environment
 python -m venv venv
-venv\Scripts\activate   # On Windows
+venv\Scripts\activate        # On Windows
 # or
-source venv/bin/activate  # On Mac/Linux
+source venv/bin/activate     # On Mac/Linux
 
-### 3.Install Dependencies:
+# Install dependencies
 pip install -r requirements.txt
-### 4.Run the ML Script:
+
+# Train the ML model
 python student_scores.py
-### 5.Run the Web App
+
+# Run the web app
 python app.py
-
-
-# Project Structure
+##  Project Structure
 ml-score-predictor/
-├── student_scores.py          # Main ML script
-├── student_score_model.pkl    # Saved trained model
-├── app.py                     # Flask app to interact via browser
+├── student_scores.py # ML model training script
+├── student_score_model.pkl # Saved trained model (generated after training)
+├── app.py # Flask web app
 ├── templates/
-│   └── index.html             # Simple frontend form
-├── requirements.txt           # List of required libraries
-└── README.md
+│ └── index.html # Simple HTML frontend for user input
+├── requirements.txt # Project dependencies
+└── README.md # Project overview and instructions
+```
 
 
